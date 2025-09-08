@@ -1,5 +1,5 @@
 // Basic config
-const API_BASE = 'https://mobile-banking-application.onrender.com';
+const API_BASE = 'https://mobile-banking-application.onrender.com/api';
 
 // Simple storage for current user and latest receipt
 function saveUser(user) { localStorage.setItem('user', JSON.stringify(user)); }
