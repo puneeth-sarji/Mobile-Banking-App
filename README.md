@@ -1,0 +1,29 @@
+### Project Description (concise)
+
+- **Title**: User-Centric Mobile Banking App (Rural-friendly)
+- **Goal**: Simple, secure banking for low-tech users with clear UI and big touch targets.
+- **Core Features**:
+  - Signup/Login with Name + PIN
+  - Dashboard: current balance, quick actions
+  - Transfers: send money to another registered user (credit applied to recipient)
+  - Bills: pay a biller/merchant (records merchant name)
+  - Mini Statement: last 5 transactions
+  - Receipt: ID, amount, date, balance after
+- **Experience**:
+  - Large buttons, minimal steps, plain language
+  - Works offline-friendly frontend (static HTML/CSS/JS)
+  - Lightweight, responsive, optional dark mode
+- **Security (basic)**: PIN auth; server-side validation; MongoDB storage
+- **Tech Stack**:
+  - Frontend: HTML, CSS, JavaScript (no framework)
+  - Backend: Node.js, Express.js
+  - Database: MongoDB (Mongoose)
+- **Data Flow**:
+  - Signup/Login → creates/validates a `User`
+  - Transfer → debits sender, credits recipient, creates two records
+  - Bill → debits user, stores `merchant`, creates record
+  - Statement → fetches last 5 `Transaction` entries
+- **Why it fits rural users**:
+  - Clear layouts, larger UI controls
+  - Low cognitive load, simple forms
+  - Reliable on modest devices and connections
