@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction | Rural Banking</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="initTransactionPage()">
+    <div class="container">
+        <h2 id="txnTitle">Transaction</h2>
+        <form id="txnForm" onsubmit="submitTransaction(event)">
+            <div id="recipientRow" style="display:none;">
+                <label>Recipient Name (for transfers)</label>
+                <input type="text" id="recipientName" placeholder="Enter recipient name" />
+            </div>
+            <div id="merchantRow" style="display:none;">
+                <label>Biller/Merchant (for bills)</label>
+                <input type="text" id="merchant" placeholder="e.g., Electricity Board" />
+            </div>
+            <label>Amount</label>
+            <input type="number" id="amount" placeholder="Enter amount" min="1" required />
+            <button class="btn primary" type="submit">Confirm</button>
+        </form>
+        <a class="link" href="dashboard.html">Back</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

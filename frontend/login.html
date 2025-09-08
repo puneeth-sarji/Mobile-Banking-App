@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Rural Banking</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login / Signup</h2>
+        <form id="authForm">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+            <label>PIN</label>
+            <input type="password" id="pin" placeholder="4-digit PIN" minlength="4" maxlength="6" required />
+            <div class="row">
+                <button type="button" class="btn" onclick="signup()">Signup</button>
+                <button type="button" class="btn primary" onclick="login()">Login</button>
+            </div>
+        </form>
+        <p id="message"></p>
+        <a class="link" href="index.html">Back</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
