@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Rural Banking</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="loadDashboard()">
+    <div class="container">
+        <h2>Dashboard</h2>
+        <div id="userInfo"></div>
+        <div class="card">
+            <h3>Balance</h3>
+            <p id="balance">--</p>
+        </div>
+        <div class="grid">
+            <a class="btn" href="#" onclick="refreshBalance()">Balance</a>
+            <a class="btn" href="transaction.html?type=transfer">Transfer</a>
+            <a class="btn" href="transaction.html?type=bill">Bills</a>
+            <a class="btn" href="#" onclick="loadStatement()">Mini Statement</a>
+        </div>
+        <ul id="statement"></ul>
+        <a class="link" href="login.html">Logout</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
